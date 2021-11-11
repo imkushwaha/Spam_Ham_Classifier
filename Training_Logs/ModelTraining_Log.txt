@@ -1,0 +1,8 @@
+2021-11-11/20:08:44		Entered the training method of the model class
+2021-11-11/20:08:44		Exception occured in training method of the model class. Exception message: local variable 'accuracy_score' referenced before assignment
+2021-11-11/20:08:44		Model Training Unsuccessful.Exited the training method of the model class
+2021-11-11/20:16:19		Entered the training method of the model class
+2021-11-11/20:16:20		Exception occured in training method of the model class. Exception message: name 'y_pred2' is not defined
+2021-11-11/20:16:20		Model Training Unsuccessful.Exited the training method of the model class
+2021-11-11/20:26:05		Entered the training method of the model class
+2021-11-11/20:26:06		Training Successful with Accuracy: 0.9729206963249516 and Precison: 0.9915966386554622. Exited the training method of the Model class

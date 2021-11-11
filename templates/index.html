@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <title>INDEX</title>
+     <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+
+    <link rel="icon" href="icon/img.png"/>
+  </head>
+  <style type="text/css">
+      
+      body{
+          background: url(pexel2.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 90vh;
+      }
+
+      .box{
+          max-width: 60rem;
+          width: 100%;
+          background:transparent;
+          display: block;
+          justify-content: center;
+          text-align: center;
+          margin-left: 185px; 
+          margin-top: 50px;
+          border-radius: 2%;
+          box-shadow:1px 3px 1px 2px grey ;
+          position:absolute;
+      }
+
+      .title{
+          font-size: 70px;
+          font-weight: bold;
+          color: rgb(253, 252, 246) ;
+          margin-top: 10px;
+          letter-spacing: 2px;
+      }
+
+      .title-details{
+          font-size: 40px;
+          font-weight: bold;
+          color: rgb(250, 248, 244);
+          letter-spacing: 3px;
+      }
+
+      .user input{
+          
+
+      }
+
+      
+      .user-input input{
+            height: 120px;;
+            width: 80%;
+            outline: none;
+            border-radius: 4px;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.10rem;
+            border-bottom-width: .2rem;
+            background:url(pexel1.jpg);
+         }
+
+      
+      .button{
+           height: 40px;
+           margin: 25px;
+           
+       }
+
+       
+       .button input{
+            height: 85%;
+            width:50%;
+            outline:none;
+            background: linear-gradient(135deg,rgb(240, 41, 6),rgb(8, 3, 15)) ; 
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: .1rem;
+            border-radius: 3px;
+            cursor: pointer;
+       }
+
+       .predict{
+           font-size: 40px;
+           font-weight: bold;
+           color: white;
+           color: red;
+           cursor: pointer;
+       }
+            
+    
+
+        .info{
+            font-size:20px;
+            cursor: pointer;
+            position: absolute;
+            margin-top: 610px;  
+            margin-left: 60px;
+        }
+
+        .info a{
+            color:rgb(247, 239, 239);
+            text-decoration:none;
+        }
+        .info a:hover{
+            color: red;
+        }
+        
+        .info1{
+            font-size:20px;
+            padding-top: 10px;
+            cursor: pointer;
+            position: absolute;
+            margin-left: 70rem;
+            margin-top: 610px;
+            
+            
+        }
+        .info1 a{
+            color:rgb(248, 238, 238);
+            text-decoration:none;
+        }
+
+        .info1 a:hover{
+            color: red;
+        }
+
+        
+    
+      </style>
+
+
+  <body>
+      <div class="box">
+      <span class="title">Message Spam Classifier</span><p>
+      <span class="title-details"> Enter your message</span><br>
+      <div class="user-input">
+        <input type="text" name="yourname" placeholder="plz enter your Message"required autofocus>
+        </div>
+      
+      <div class="button">
+        <input type="submit" value="Predict">
+
+        </div>
+        <span class="predict">{{prediction_text}}</span>
+      </div>
+      <span class="info"><a href="https://www.linkedin.com/in/imupendra/">Developed by Upendra Kumar</a></span>
+      <span class="info1"><a href="https://github.com/imkushwaha/Spam_Ham_Classifier">Source Code</a></span>
+    
+  </body>
+  </html>

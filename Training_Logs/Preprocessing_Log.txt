@@ -1,0 +1,18 @@
+2021-11-11/16:12:00		Entered the Clean method of the Cleansing class
+2021-11-11/16:12:00		Data Cleansing done Successful.Exited the Clean method of the Cleansing class
+2021-11-11/16:12:48		Entered the Clean method of the Cleansing class
+2021-11-11/16:12:48		Data Cleansing done Successful.Exited the Clean method of the Cleansing class
+2021-11-11/16:12:48		Entered the text_preprocessor method of the textprocessing class
+2021-11-11/16:15:55		text preprocessing successful.Exited the text_preprocessor method of the textprocessing class
+2021-11-11/20:05:43		Entered the Clean method of the Cleansing class
+2021-11-11/20:05:43		Data Cleansing done Successful.Exited the Clean method of the Cleansing class
+2021-11-11/20:05:43		Entered the text_preprocessor method of the textprocessing class
+2021-11-11/20:08:42		text preprocessing successful.Exited the text_preprocessor method of the textprocessing class
+2021-11-11/20:12:49		Entered the Clean method of the Cleansing class
+2021-11-11/20:12:49		Data Cleansing done Successful.Exited the Clean method of the Cleansing class
+2021-11-11/20:12:49		Entered the text_preprocessor method of the textprocessing class
+2021-11-11/20:16:16		text preprocessing successful.Exited the text_preprocessor method of the textprocessing class
+2021-11-11/20:22:14		Entered the Clean method of the Cleansing class
+2021-11-11/20:22:14		Data Cleansing done Successful.Exited the Clean method of the Cleansing class
+2021-11-11/20:22:14		Entered the text_preprocessor method of the textprocessing class
+2021-11-11/20:26:02		text preprocessing successful.Exited the text_preprocessor method of the textprocessing class

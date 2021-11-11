@@ -4,6 +4,10 @@ from sklearn.preprocessing import LabelEncoder
 from application_logging import logger
 
 class Cleansing():
+    """
+    This class shall  be used for cleansing data.
+
+    """
     
     def __init__(self):
         self.file_object=open("Training_Logs/Preprocessing_Log.txt", 'a+')
