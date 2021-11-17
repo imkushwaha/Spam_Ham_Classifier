@@ -1,0 +1,10 @@
+2021-11-11/16:12:00		Entered the get_data method of the Data_Getter class
+2021-11-11/16:12:00		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-11-11/16:12:48		Entered the get_data method of the Data_Getter class
+2021-11-11/16:12:48		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-11-11/20:05:42		Entered the get_data method of the Data_Getter class
+2021-11-11/20:05:43		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-11-11/20:12:49		Entered the get_data method of the Data_Getter class
+2021-11-11/20:12:49		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-11-11/20:22:14		Entered the get_data method of the Data_Getter class
+2021-11-11/20:22:14		Data Load Successful.Exited the get_data method of the Data_Getter class

@@ -1,0 +1,6 @@
+2021-11-11/20:08:42		Entered the TrainTest method of the splitData class
+2021-11-11/20:08:43		Train Test Successful.Exited the TrainTest method of the splitData class
+2021-11-11/20:16:16		Entered the TrainTest method of the splitData class
+2021-11-11/20:16:19		Train Test Successful.Exited the TrainTest method of the splitData class
+2021-11-11/20:26:02		Entered the TrainTest method of the splitData class
+2021-11-11/20:26:05		Train Test Successful.Exited the TrainTest method of the splitData class
