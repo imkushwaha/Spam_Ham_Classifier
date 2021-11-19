@@ -5,13 +5,15 @@ import numpy as np
 import sklearn
 import pickle
 import string
-from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt')
+from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
 app = Flask(__name__)
+
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
@@ -62,8 +64,10 @@ def predict():
     
         # 1. preprocess
         transformed_sms = transform_text(text)
+        
         # 2. vectorize
         vector_input = tfidf.transform([transformed_sms])
+        
         # 3. predict
         result = model.predict(vector_input)[0]
         
