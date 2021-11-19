@@ -1,0 +1,6 @@
+nltk==3.6.1
+pandas==1.2.4
+Pickle
+requests==2.25.1
+scikit-learn==0.21.1
+flask==1.1.2

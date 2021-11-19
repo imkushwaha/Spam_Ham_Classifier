@@ -1,167 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>INDEX</title>
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/Bootstrap.css">
-      <link rel="icon" href="icon/img.png"/>
-  </head>
-  <style type="text/css">
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-html{
-    font-size: 62.5%;
-}
-     section{
-          display: flex;
-          height: 100vh;
-          justify-content: center;
-          align-items: center;
-          background: linear-gradient(135deg,rgb(2, 66, 82),rgb(15, 1, 3));
-    
- }
-
-     .box{
-          max-width: 100rem;
-          width: 100%;
-          background: transparent;
-          border-radius: 2%;
-          box-shadow:0px 1px 5px 0px white ;
-         
-          position: absolute;
-      }
-
-      .title{
-          font-size: 50px;
-          font-weight: bold;
-          color: rgb(252, 249, 248) ;
-          letter-spacing: 2px;
-        
-      }
-      .title-details{
-          font-size: 30px;
-          font-weight: bold;
-          color: rgb(248, 245, 244);
-          letter-spacing: 3px;
-      }
-           
-      .button{
-           height: 40px;
-           margin: 25px;
-           
-       }
-
-       
-       .button input{
-            height: 94%;
-            width:23%;
-            outline:none;
-            background: linear-gradient(135deg,rgb(13, 95, 189),rgb(13, 95, 189)) ; 
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: .1rem;
-            border-radius: 5px;
-            box-shadow:0 0 0px 1px rgb(4, 97, 173) ;
-            cursor: pointer;
-       }
-
-       .button input:hover{
-           box-shadow: 0 0 3px;
-           -webkit-transform: scale(1.1);
-           transform: scale(1.1);
-
-       }
-
-       
-       .predict{
-           font-size: 40px;
-           font-weight: bold;
-           color: red;
-           cursor: pointer;
-           
-       }
-
-       textarea{
-           font-size: 15px;
-           width: 600px;
-           text-align: center;
-           position: relative;
-          
-       }
-
-       textarea:hover{
-            box-shadow: 0 0 9px rgb(248, 5, 5);
-       }
-
-       .menu{
-           margin: 10px;
-       }
-
-       .menu ul{
-
-       }
-
-       .menu li{
-           display: inline;
-           margin: 25px;
-           letter-spacing: 2.5px;
-           
-           
-       }
-
-       .menu li a{
-           font-size: 16px;
-           font-weight: bold;
-           color: rgb(238, 138, 6);
-       }
-
-      </style>
 <body>
     <div class="warpper fl">
         <div class="main">
             <div class="head">
-   
+                <div style="background-color:#101013; color:white;padding:5px;">
 
-    
-    <div class="box">
-        <center><span class="title">Message Spam Classifier</span></center>
-        <center><span class="title-details"> Enter your message</span><br></center>
-        <div class="user-input">
-        <form action="/predict" method="POST" class="row">
-        <center><a href="#"><textarea style=" border-radius:5px;" name="message" id="message" output="spam" rows="6%" placeholder="please enter your message" required></textarea></a></center>
+                    <center>
+                        <h1 style="color:white; letter-spacing: 2px;">Spam Ham Classifier</h1><br>
+                    </center>
+                </div>
+                <div class="form fl p-3" style=" height:81vh; background:linear-gradient(135deg,rgb(2, 66, 82),rgb(15, 1, 3))">
+                    <center><div style=" color:white; font-size:xx-large; letter-spacing: 2px;">Enter your message</div></center>
+                    <div class="user-input">
+                        <form action="/predict" method="POST" class="row">
+                        <center><a href="#"><textarea style=" border-radius:5px;  font-size: 15px; width: 600px; text-align: center;" name="message" id="message"  rows="6%" placeholder="please enter your message to classify" required></textarea></a></center>
+                        </div><br>
+                        <div class="button">
+                        <center><a href="/predict"><input type="submit" value="PREDICT" name="Message"  style="letter-spacing: 2px;" class="sub btn btn-primary" ></a></center>
+                        </form>
+                        </div><br>
+                       
+                    <center>
+                        <h2 style="color:rgb(238, 10, 10);margin-bottom: 50px;"> {{prediction_text}}</h2>
+                    </center>
+
+                    <div class="fixed-bottom bg-info bg-black row align-items-center" >
+                        <div class="col text-center">
+                            <a href="https://www.linkedin.com/in/imupendra/" target="_blank" style="text-decoration: none;"><p style="color:whitesmoke" > Developed by Upendra Kumar</p></a>
+                        </div>
+
+                        <div class="col text-center">
+                            <a href="https://github.com/imkushwaha/Spam_Ham_Classifier" target="_blank" style="text-decoration: none;"><p style="color:whitesmoke" > Source Code</p></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="button">
-        <center><a href="/predict"><input type="submit" value="PREDICT" name="Message"></a></center>
-        </form>
-        </div>
-        <center><span class="predict">{{prediction_text}}</span></center>
-    
     </div>
-
-        <div class="fixed-bottom bg-info bg-gradient row align-items-center" >
-
-            <div class="fixed-bottom bg-info bg-gradient row align-items-center" >
-                <div class="col text-center">
-                    <a href="https://www.linkedin.com/in/imupendra/" style="text-decoration: none;"><p style="color:whitesmoke" > Developed by Upendra Kumar</p></a>
-                </div>
-
-                <div class="col text-center">
-                    <a href="https://github.com/imkushwaha/Thyroid-Disease-Detection" style="text-decoration: none;"><p style="color:whitesmoke" > Source Code</p></a>
-                </div>
-            </div>  
 </body>
+
 </html>
