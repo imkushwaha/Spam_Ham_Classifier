@@ -1,13 +1,18 @@
+from wsgiref import simple_server
 from flask import Flask, render_template, request
+from flask_cors import cross_origin
 import requests
 import pickle
 import numpy as np
 import sklearn
 import pickle
 import string
+import os
+
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
@@ -45,6 +50,7 @@ def transform_text(text):
 
 
 @app.route('/',methods=['GET'])
+@cross_origin()
 def Home():
     return render_template('index.html')
 
@@ -58,6 +64,7 @@ def Home():
 #    return render_template('contact.html')
 
 @app.route("/predict", methods=['POST'])
+@cross_origin()
 def predict():
     
     if request.method == 'POST':
@@ -80,5 +87,14 @@ def predict():
 
         return render_template('index.html', prediction_text=prediction)
     
-if __name__=="__main__":
-    app.run(host="0.0.0.0", port="8080")
+#if __name__=="__main__":
+#    app.run(host="0.0.0.0", port="8080")
+    
+        
+port = int(os.getenv("PORT", 5000))
+if __name__ == "__main__":
+    host = '0.0.0.0'
+    # port = 5000
+    httpd = simple_server.make_server(host, port, app)
+    # print("Serving on %s %d" % (host, port))
+    httpd.serve_forever()

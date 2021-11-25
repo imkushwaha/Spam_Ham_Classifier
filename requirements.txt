@@ -4,5 +4,6 @@ pandas
 requests
 scikit-learn==0.21.1
 flask
+flask_cors
 pytest
 -e .
