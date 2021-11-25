@@ -1,0 +1,6 @@
+application_logging
+dataPreprocessing
+data_division
+data_ingestion
+model_building
+tests
