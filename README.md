@@ -27,6 +27,10 @@ https://spamhampredictioncicd.herokuapp.com/
 
 Note: In link 2 CI-CD pipeline has been integrated using CircleCI
 
+# Demo 
+
+https://user-images.githubusercontent.com/72372136/144083595-7005d8eb-36e1-40f8-be24-5a7175f2c914.mp4
+
 # Technical Aspects
 
 - Python 3.7 and more
@@ -58,6 +62,35 @@ Run the app - python app.py
 ![spam_UI_2](https://user-images.githubusercontent.com/72372136/144047517-a0ef67ac-5487-4d92-b9ca-01c7eaa4d9aa.JPG)
 
 ![spam_UI_3](https://user-images.githubusercontent.com/72372136/144047564-bb3ef58e-e65e-4d86-bce5-50736cfb3452.JPG)
+
+# Workflow
+
+## Data Collection
+Spam Ham Data Set from UCI Machine Learning Repository.
+
+Link:https://archive.ics.uci.edu/ml/datasets/sms+spam+collection
+
+## Data Cleansing
+- Drop unnecessary columns.
+- Drop duplicates rows from dataset.
+- Rename required columns.
+- Encode target column using LabelEncoder.
+
+## Text Preprocessing
+- LowerCase
+- Tokenization
+- Removing Special Characters
+- Removing stop words and punctuation
+- Stemming
+
+## Model Creation and Evaluation
+- Various classification model created. 
+- Algorithms used are Naive Bayes, Logistic Regression, DecisionTreeClassifier,RandomForestClassifier, AdaBoostClassifier, Bagging Classifier etc.
+- Multinomial naive_bayes classiifer has given good accuracy and precision.
+- Model performance evaluated based on accuracy, precision.
+
+## Model Deployment
+- Final Model selected is deployed over Heroku cloud environment using WebApp created from Flask framework.
 
 # Author
 Upendra Kumar: https://www.linkedin.com/in/imupendra/
